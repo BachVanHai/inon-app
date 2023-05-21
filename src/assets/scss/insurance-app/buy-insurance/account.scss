@@ -1,0 +1,44 @@
+.account-list {
+  .table-detail-header {
+    text-align: left;
+    width: 25%;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+  }
+  .ReactTable .rt-tbody .rt-tr {
+    text-align: right;
+  }
+  
+}
+
+
+.insurance-manage-list
+{
+  .table-detail-header {
+    text-align: left;
+    width: 25%;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+  }
+
+
+}
+
+.ReacttableIns {
+  // overflow: inherit !important;
+  @media (max-width: 769px) {
+  margin: 0rem -1.3rem 0rem -1.3rem;
+  }
+}
+
+.ReacttableIns {
+  @media (max-width: 769px) {
+    overflow: auto !important;
+    }
+}
+
+.ReacttableIns .rt-th, .ReacttableIns .rt-td {
+  @media (max-width: 769px) {
+  white-space: initial
+  }
+}

@@ -1,0 +1,117 @@
+.intro {
+  background-image: url("../../../images/app-no1/intro/intro0-background.svg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-step1 {
+  background-image: url("../../../images/app-no1/intro/intro1-bg.svg");
+}
+
+.intro-step2 {
+  background-image: url("../../../images/app-no1/intro/intro2-bg.svg");
+}
+
+.intro-step3 {
+  background-image: url("../../../images/app-no1/intro/intro3-bg.svg");
+}
+
+.intro-steps {
+
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-x: hidden;
+
+  @keyframes swipe {
+    0%   {left: 100vw;}
+    25%  {left: 50vw;}
+    50%  {left: 25vw;}
+    100% {left: 0vw;}
+  }
+
+  .step-1 {
+    animation-duration: 0.3s;
+    animation-name: swipe;
+    animation-timing-function: ease-in
+  }
+
+  .step-2 {
+    left: 100vw;
+    display: none;
+  }
+
+  .step-3 {
+    left: 200vw;
+    display: none;
+  }
+
+  .cover-image {
+    height: 40vh !important;
+    position: relative;
+
+    img {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .intro-steps-benefit {
+    height: 168px;
+
+    .intro-steps-title {
+      font-size: 24px;
+      color: #73C14F;
+      height: 72px;
+
+      div {
+        padding-left: 22px;
+      }
+    }
+
+    .intro-steps-content {
+      margin: auto;
+      font-size: 14px;
+      color: #113934;
+      line-height: 24px;
+    }
+  }
+
+  .intro-steps-footer {
+    height: 10vh;
+    padding: 0 24px;
+
+    .intro-steps-footer-steps {
+
+      .active-step-icon {
+        width: 30px;
+        height: 10px;
+        background: #FF9900;
+        border-radius: 100px;
+        margin-right: 12px;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .inactive-step-icon {
+        transition: width 0.3s ease-in-out;
+        width: 10px;
+        height: 10px;
+        background: #E7EBEB;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+    }
+
+    .intro-steps-footer-steps-next-step {
+      cursor: pointer;
+    }
+  }
+}

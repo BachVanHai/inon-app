@@ -1,0 +1,6 @@
+export const KEY_ID_PERSON_TYPE = "icTypeInsurBuyer"
+export const KEY_NAME = "nameInsurBuyer"
+export const KEY_ADDRESS = "addressInsurBuyer"
+export const KEY_PHONE_NUMBER = "phoneNumberInsurBuyer"
+export const KEY_EMAIL = "emailInsurBuyer"
+export const KEY_IC_NO = "icNoInsurBuyer"

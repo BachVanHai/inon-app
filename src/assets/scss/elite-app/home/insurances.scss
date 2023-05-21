@@ -1,0 +1,51 @@
+.elite-app {
+  .insurances {
+    background: #F8F8FA;
+    border-radius: 24px 24px 0px 0px;
+
+    .insurance-tab {
+      display: flex;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .item {
+        min-width: fit-content;
+        color: #A0B0AE;
+      }
+      .insurance-active {
+        color: #73C14F;
+      }
+    }
+
+    .product-list {
+
+      .px-custom {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .insurance-card {
+        height: 100%;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px 0 #22292f1a;
+        transition-property: all, background, color, border-color;
+        transition-duration: 0.3s, 0s, 0s, 0s;
+        transition-timing-function: ease-in-out, ease, ease, ease;
+        transition-delay: 0s, 0s, 0s, 0s;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 25px 0 #22292f40;
+          cursor: pointer;
+        }
+
+        .insurance-name {
+          font-size: 10px;
+          color: #113934;
+        }
+      }
+    }
+
+  }
+}

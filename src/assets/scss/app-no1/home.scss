@@ -1,0 +1,161 @@
+.home-container {
+  .home {
+    .banner-img {
+      height: 350px;
+    }
+
+ 
+
+    .carousel {
+      &.carousel-slider {
+        border-radius: 0.5rem;
+      }
+
+      .slide {
+        background-color: transparent;
+      }
+    }
+    @media (max-width: 768px) {
+      .banner-img {
+        height: 150px;
+      }
+      .control-arrow {
+        .control-prev,
+        .control-next {
+          display: none;
+        }
+      }
+    }
+
+    .h-250px {
+      height: 250px;
+    }
+  }
+
+  .w-175px {
+    width: 175px;
+  }
+
+  .mr-md-62px {
+    @media screen and (max-width: 768px) {
+      margin-right: 62px;
+    }
+  }
+
+  .popover {
+    max-width: fit-content !important;
+  }
+
+  .custom-tooltip {
+    border: #ccc;
+    background-color: rgb(232, 232, 243);
+    border-radius: 5px;
+  }
+
+  .more-icon {
+    transition: 0.3s;
+    padding: 9px 10px;
+    width: 40px;
+    &:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+  }
+
+  .font-size-18 {
+    font-size: 18px;
+  }
+
+  .card-body {
+    @media screen and (max-width: 768px) {
+      padding: 1rem !important;
+    }
+  }
+
+  .popover {
+    z-index: 2 !important;
+  }
+
+  .revenue-rating {
+
+    .revenue-rating-card {
+      border-radius: 25px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      color: #fff;
+
+      .text-revenue {
+        color: #17A807;
+      }
+
+      .text-bonus {
+        color: #A4BB41;
+      }
+
+      .text-number-contract {
+        color: #E2BB41;
+      }
+    }
+
+    .width-60 {
+      width: 60px;
+    }
+
+    .height-60 {
+      height: 60px;
+    }
+
+    .avatar-img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .width-custom {
+      width: 200px;
+      @media screen and (min-width: 360px){
+        width: 90px;
+      }
+
+      @media screen and (min-width: 411px){
+        width: 105px;
+      }
+
+      @media screen and (min-width: 540px){
+        width: 140px;
+      }
+
+      @media screen and (min-width: 768px){
+        width: 170px;
+      }
+
+      @media screen and (min-width: 992px){
+        width: 200px;
+      }
+    }
+
+    .revenue-rating-card-mobile {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      border-radius: 5px;
+      .tripped-bg {
+        background-color: #22292f0d;
+      }
+    }
+
+    table {
+      thead {
+        background-color: #607e60;
+      }
+      .thead-dark {
+        border-color: #404040;
+        color: white;
+      }
+
+      .badge-secondary {
+        width: 20px;
+      }
+
+      .text-bonus {
+        color: #A4BB41;
+      }
+    }
+  }
+}

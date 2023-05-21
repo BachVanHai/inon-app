@@ -1,0 +1,67 @@
+.support-form-edit label {
+  visibility: hidden;
+}
+.support-form-edit .form-label-group {
+  margin-bottom: 0;
+}
+.management-question {
+  @media (max-width: 576px) {
+    .list-request {
+      display: block;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .card {
+      display: none;
+    }
+  }
+  @media (min-width: 577px) {
+    .list-request {
+      display: none;
+    }
+    .card {
+      display: block;
+    }
+  }
+}
+.detail-request {
+  @media (max-width: 576px) {
+    .detail-user-mobile {
+      display: block;
+    }
+    .detail-user-desktop {
+      display: none;
+    }
+  }
+  @media (min-width: 577px) {
+    .detail-user-desktop {
+      display: block;
+    }
+    .detail-user-mobile {
+      display: none;
+    }
+  }
+}
+
+.box-search-mobile {
+  input {
+    border-radius: 30px !important;
+  }
+}
+
+.title-detail-request {
+  @media (max-width: 768px) {
+    .detail-title{
+      width: 100%;
+      inline-size: 250px;
+      overflow-wrap: break-word;
+    }
+  }
+  @media (min-width: 769px) {
+    .detail-title{
+      width: 100%;
+      overflow-wrap: break-word;
+    }
+  }
+}

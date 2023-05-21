@@ -1,0 +1,89 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+
+// Core variables and mixins overrides
+@import "~bootstrap/scss/_variables.scss";
+@import "varibles";
+
+.dropzone {
+  min-height: 60px;
+  width: 100%;
+  border: 2px dashed $secondary-color;
+  margin-right: 24px;
+  background: $body-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus {
+    outline: 0;
+  }
+}
+.dz-thumb {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  padding: 4px;
+}
+
+.dz-thumb-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  padding: 4px;
+}
+
+.verticalline {
+  border-left: 1px solid #eaeaea;
+  display: flex;
+  width: 2px;
+  height: 100px;
+  justify-content: center;
+   align-items: center;
+}
+
+.thumb-container {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 24px;
+  background: $body-bg;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+}
+
+.dz-thumb-inner {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+}
+.dz-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.required{
+  border: 2px dashed red !important;
+}
+
+.dz-thumb{
+  @media (max-width: 769px) {
+  display: inline-flex;
+  width: 100px !important;
+  height: 50px !important;
+  padding: 4px;
+  }
+}
+
+.thumb-container {
+  @media (max-width: 769px) {
+    width: 100px !important;
+  }
+}
+

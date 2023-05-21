@@ -1,0 +1,157 @@
+.products-container {
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  flex-grow: 1;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  @media screen and (max-width: 768px) {
+    //height: calc(100% - 80px);
+    background: #F8F8FA;
+  }
+
+  .insurance-title {
+    color: #106D5A;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+    @media screen and (max-width: 768px){
+      display: block;
+    }
+  }
+
+  .insurance-type-tab {
+    font-weight: bold;
+    color: #A0B0AE;
+    overflow: hidden;
+    overflow-x: auto;
+    display: none;
+    @media screen and (max-width: 768px){
+      display: flex;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      overflow: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .insurance-type-tab-title {
+      min-width: fit-content;
+      padding: 1rem 0;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .insurance-type-tab-active {
+      color: #73C14F !important;
+      border-bottom: 2px solid #73C14F !important;
+    }
+  }
+
+  .list-product-title {
+    color: #106D5A;
+    font-weight: bold;
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .insurances {
+    //height: calc(100% - 54px - 58px);
+    //overflow: auto;
+    @media screen and (min-width: 768px){
+      min-height: 340px;
+    }
+    padding-top: 17px;
+
+    .col-6-custom-even {
+      padding-right: 7px !important;
+    }
+
+    .col-6-custom-odd {
+      padding-left: 7px !important;
+    }
+
+    .insurance-card {
+      height: 100%;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px 0 #22292f1a;
+      padding: 20px;
+      transition-property: all, background, color, border-color;
+      transition-duration: 0.3s, 0s, 0s, 0s;
+      transition-timing-function: ease-in-out, ease, ease, ease;
+      transition-delay: 0s, 0s, 0s, 0s;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+        min-height: fit-content;
+      }
+
+      &:hover {
+        .insurance-name {
+          color: #73C14F;
+        }
+      }
+
+      .insurance-name {
+        color: #113934;
+        font-size: 14px;
+        font-weight: bold;
+        @media screen and (max-width: 768px) {
+          font-size: 10px;
+          padding-left: 5px;
+          padding-top: 5px;
+        }
+      }
+
+      .buy-now {
+        color: #587471;
+        font-size: 12px;
+        font-weight: 500;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+
+      .opening-soon {
+        top: 40%;
+        color: #B9E0A7;
+        font-size: 14px;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        //box-shadow: 0 4px 25px 0 #22292f40;
+        box-shadow: 0px 40px 60px rgba(134, 149, 146, 0.4);
+        cursor: pointer;
+      }
+
+      .vehicle-icon {
+        img {
+          width: 50px;
+          height: 50px;
+          @media screen and (max-width: 768px) {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+
+    .mb-28px {
+      margin-bottom: 28px;
+    }
+  }
+}

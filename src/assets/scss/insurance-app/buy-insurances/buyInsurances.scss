@@ -1,0 +1,139 @@
+@import "../addRole.scss";
+
+.buy-insurances {
+    box-shadow: none !important;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    .step {
+        background-color: transparent !important;
+    }
+    // from vta
+    .card-active {
+        transform: translateY(-5px);
+        box-shadow: 0px 20px 20px #d3dedc;
+        cursor: pointer;
+        transition: all 0.3 ease-in-out;
+        background: linear-gradient(90deg, #106d5a 20.27%, rgba(16, 109, 90, 0) 136.87%),
+            linear-gradient(283.11deg, #106d5a -16.63%, #73c14f 90.56%);
+        color: #fff;
+    }
+    .fee-vta {
+        background-color: #399055;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .text-white {
+        color: #fff;
+    }
+    .text-dark {
+        color: #000;
+    }
+    .text-yellow {
+        color: #ffd503;
+    }
+    .bg-gradient {
+        background: linear-gradient(90deg, #106d5a 20.27%, rgba(16, 109, 90, 0) 136.87%),
+            linear-gradient(185.11deg, #106d5a -20.63%, #73c14f 86.56%);
+    }
+    //
+    @media (max-width: $breakpoint-tablet) {
+        .font-large-1 {
+            font-size: 1.4rem !important;
+        }
+        .font-medium-4 {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    &.nav.nav-tabs {
+        .step-wrapper.nav-item {
+            display: table-cell;
+            width: auto;
+            .step.nav-link {
+                transform: translateY(0) !important;
+                text-align: center !important;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .step-text {
+                    /* deskop mode */
+                    border-radius: 50%;
+                    font-size: 1.5rem;
+                    z-index: 2;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    background: $white;
+                } /** tablet mode */
+                @media (max-width: $breakpoint-tablet) {
+                    .step-text {
+                        height: 38px;
+                        width: 38px;
+                        font-size: 1rem;
+                    }
+                }
+
+                &.active {
+                    .step-text {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                    &:after {
+                        background: $primary !important;
+                        box-shadow: none !important;
+                        height: 3px;
+                        top: 50% !important;
+                        z-index: -1;
+                        width: 50%;
+                    }
+                }
+                &.done {
+                    .step-text {
+                        border-color: $primary !important;
+                        background-color: $primary;
+                    }
+                    &:before,
+                    &:after {
+                        background: $primary !important;
+                        box-shadow: none !important;
+                        height: 3px;
+                        top: 50% !important;
+                        z-index: -1;
+                        width: 50%;
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        width: 45.5%;
+                    }
+                    &:before {
+                        left: 0;
+                    }
+                    &:after {
+                        right: 0;
+                    }
+                }
+                &:not(.active) {
+                    .step-text {
+                        border: 3px solid $gray-600;
+                        color: $gray-600;
+                    }
+                }
+            }
+            /* header label - deskop mode */
+            label {
+                font-size: 1rem;
+            } /* tablet mode */
+            @media (max-width: $breakpoint-tablet) {
+                label {
+                    font-size: 0.65rem;
+                }
+            }
+        }
+    }
+}

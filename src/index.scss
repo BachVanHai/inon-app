@@ -1,0 +1,29 @@
+@import "assets/scss/elite-app/common";
+@import "assets/scss/elite-app/font";
+
+.app-no1 {
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #f3f3f3 !important;
+  }
+
+  .table thead th {
+    vertical-align: middle !important;
+  }
+
+  .h-250px {
+    height: 250px;
+  }
+}
+
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)
+}
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container--top-center, .Toastify__toast-container--top-left, .Toastify__toast-container--top-right {
+    top : env(safe-area-inset-top) !important;
+  }
+}
+
+

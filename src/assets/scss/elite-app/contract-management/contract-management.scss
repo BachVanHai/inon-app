@@ -1,0 +1,239 @@
+.contract-management-container {
+
+  background-image: url("../../../images/elite-app/contract-management/contract-management-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  height: auto;
+  min-height: calc(100vh - 132px);
+
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - 60px);
+  }
+
+  .contract-management-content {
+    max-width: 925px;
+    padding-bottom: 50px;
+
+    .carousel-container {
+      padding-bottom: 5rem;
+      @media screen and (min-width: 768px){
+        padding-right: 8rem;
+        padding-left: 8rem;
+        padding-bottom: 5rem;
+      }
+      .carousel-multi-item {
+        .image-item {
+          justify-content: center;
+          display: flex;
+
+          .dark-green {
+            color: #587471;
+          }
+
+          .green {
+            color: #106D5A;
+          }
+
+          .brand-logo-div {
+
+            .number-plate {
+              left: 32px;
+              top: 180px;
+              font-size: 24px;
+              @media screen and (max-width: 768px) {
+                top: 120px;
+                left: 16px;
+                font-size: 18px;
+              }
+              @media screen and (max-width: 360px) {
+                top: 110px;
+                left: 16px;
+                font-size: 18px;
+              }
+            }
+
+            .name {
+              left: 32px;
+              bottom: 40px;
+              font-size: 16px;
+              @media screen and (max-width: 768px) {
+                top: 150px;
+                left: 16px;
+                font-size: 12px;
+              }
+              @media screen and (max-width: 360px) {
+                top: 135px;
+                left: 16px;
+                font-size: 12px;
+              }
+            }
+
+            .detail {
+              right: 32px;
+              bottom: 50px;
+              font-size: 16px;
+              cursor: pointer;
+
+              @media screen and (max-width: 768px) {
+                right: 16px;
+                bottom: 37px;
+                font-size: 16px;
+                cursor: pointer;
+              }
+
+              @media screen and (max-width: 360px) {
+                right: 16px;
+                bottom: 30px;
+                font-size: 16px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .brand-logo-background {
+
+            max-width: 450px;
+            max-height: 284px;
+            @media screen and (max-width: 768px) {
+              max-height: 194px;
+            }
+            @media screen and (max-width: 360px) {
+              max-height: 174px;
+            }
+          }
+
+          .logo-company {
+            left: 32px;
+            top: 32px;
+            @media screen and (max-width: 768px) {
+              width: 35px;
+              height: 32px;
+              left: 16px;
+            }
+          }
+
+          .vehicle-icon {
+            width: 56px;
+            height: 56px;
+            left: 109px;
+            top: 32px;
+            @media screen and (max-width: 768px) {
+              width: 35px;
+              height: 32px;
+              left: 61px;
+            }
+          }
+
+          .insurance-logo {
+            right: 32px;
+            top: 42px;
+            @media screen and (max-width: 768px) {
+              width: 35px;
+              height: 32px;
+              top: 32px;
+            }
+          }
+        }
+
+        .react-multiple-carousel__arrow--left {
+          @media screen and (max-width: 576px) {
+            left: 0;
+          }
+        }
+
+        .react-multiple-carousel__arrow--right {
+          @media screen and (max-width: 576px) {
+            right: 0;
+          }
+        }
+
+        //Custom arrow
+        .react-multiple-carousel__arrow {
+          z-index: 50;
+          background: none !important;
+
+          &:focus {
+            outline: 0 !important;
+          }
+
+          &::before {
+            color: #73C14F !important;
+            font-size: 40px !important;
+          }
+        }
+      }
+
+      // Custom dot
+      .custom-dot-list-style {
+        flex-wrap: wrap;
+        left: 5px !important;
+        right: 5px !important;
+        //top: 0 !important;
+        .react-multi-carousel-dot {
+          button {
+            border: none !important;
+            background: white;
+          }
+        }
+
+        .react-multi-carousel-dot--active {
+          button {
+            background: #73C14F !important;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .contract-operation {
+      max-width: 590px;
+
+      .btn-custom {
+        width: 205px;
+        height: 48px;
+        border-radius: 16px;
+        font-weight: 600;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .printed-matters {
+        background-color: #FFEBCC !important;
+        color: #FF9900 !important;
+        border: none;
+      }
+
+      .re-insurance {
+        color: white;
+        background: #FF9900;
+        border: none;
+      }
+    }
+  }
+
+  .contract-empty {
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 70px;
+      height: 70px;
+      margin-top: 40vh;
+    }
+
+    h5 {
+      color: white;
+    }
+  }
+}
+
+.react-pdf__Page {
+  justify-content: center;
+
+  @media screen and (max-width: 576px) {
+    justify-content: start;
+  }
+}
+
+

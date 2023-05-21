@@ -1,0 +1,6 @@
+export const KEY_ID_PERSON_TYPE = "personTypePers"
+export const KEY_IC_NO = "icNoPers"
+export const KEY_ADDRESS = "addressPers"
+export const KEY_PHONE_NUMBER = "phoneNumberPers"
+export const KEY_EMAIL = "emailPers"
+export const KEY_NAME = "namePers"

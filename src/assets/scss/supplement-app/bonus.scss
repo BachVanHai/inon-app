@@ -1,0 +1,24 @@
+.bonus {
+    &.collapse-collapsed .collapse-icon,
+    &.closing .collapse-icon {
+      transform: rotate(0deg);
+      transition: all 0.5s ease;
+    }
+    &.collapse-shown .collapse-icon,
+    &.opening .collapse-icon {
+      transform: rotate(180deg);
+      transition: all 0.5s ease;
+    }
+
+}
+
+.bonus-table {
+
+  tr {
+    cursor: pointer;
+  }
+  .user-selected {
+    background-color: #c7c7c7;
+  }
+}
+

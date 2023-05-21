@@ -1,0 +1,121 @@
+@import "addRole";
+.wrapAll {
+    .titel.MAHD {
+        font-size: 17px;
+        color: #0f3324;
+    }
+    .FLEX1 {
+        justify-content: space-around !important;
+    }
+    .colorSecond {
+        color: #0e6856 !important;
+    }
+    .colorPrimary {
+        color: #51912d;
+    }
+
+    button.btn.btn-check {
+        background: #0e6856;
+        color: white;
+        height: 38px;
+    }
+    .contentColor {
+        color: $check;
+        font-weight: bold;
+    }
+    .subTiltel {
+        font-style: italic;
+        font-size: 12px;
+    }
+    .form-label-group > input:focus:not(:placeholder-shown) ~ label,
+    .form-label-group > input:not(:active):not(:placeholder-shown) ~ label,
+    .form-label-group textarea:focus:not(:placeholder-shown) ~ label,
+    .form-label-group textarea:not(:active):not(:placeholder-shown) ~ label {
+        color: $cyan !important;
+    }
+    .floatLeft {
+        width: 50%;
+        float: left;
+    }
+    .floatLeft input,
+    .floatLeft .select__control {
+        //border: none;
+    }
+    span.select__indicator-separator.css-1okebmr-indicatorSeparator {
+        display: none;
+    }
+
+    .FLEX {
+        display: flex;
+        justify-content: space-between;
+    }
+    .row {
+        background: white;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+        border-radius: 8px;
+        padding: 40px 20px;
+        margin: 0px;
+    }
+    input.form-control.flatpickr-input {
+        background: white;
+    }
+    .wizard-actions.d-flex.justify-content-between {
+        justify-content: flex-end !important;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .btnGardient {
+        background: linear-gradient(86.55deg, #51912d 18.03%, #0e6856 104.15%);
+    }
+    .MGTOP {
+        margin-top: 10px;
+    }
+    label.titel.MAHD,
+    label.titel {
+        color: $check;
+        font-weight: bold;
+    }
+    .ACTIVE {
+        opacity: 1;
+    }
+    .NOACTIVE {
+        opacity: 0;
+    }
+    .REMOVE-MARGIN {
+        margin-bottom: 0px;
+    }
+    .custom-card {
+        background: #ffffff;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+        border-radius: 8px;
+    }
+    .NOBGANDBORDER {
+        background: none !important;
+        box-shadow: 0 0 black !important;
+    }
+    .CUSOR:hover {
+        cursor: pointer;
+    }
+    .MG0 {
+        margin-bottom: 0px !important;
+    }
+    .MGRIGHT {
+        margin-right: 10px;
+    }
+    .HOVERCOPY:hover {
+        transition: 0.2s;
+        color: #51912d;
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+    .colorTiTle {
+        color: #999999;
+    }
+    .MGBOTTOM {
+        margin-bottom: 20px;
+    }
+
+    .is-invalid {
+        border: 1px solid red !important;
+    }
+}

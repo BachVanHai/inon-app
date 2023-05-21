@@ -1,0 +1,33 @@
+.elite-app {
+  .navs-container {
+    background: white;
+    .nav {
+      height: 74px;
+      align-items: center;
+      padding: 0 140px;
+      @media screen and (max-width: 768px){
+        padding: 0 10px;
+        height: 56px;
+      }
+
+      .dropdown-menu-media {
+        width: 26rem;
+
+        .media-list {
+          max-height: 423px;
+          cursor: pointer;
+
+          .media {
+            padding: 1rem;
+            border: none;
+            border-bottom: 1px solid #dae1e7;
+          }
+        }
+
+        .dropdown-menu-footer a {
+          border-top: 1px solid #dae1e7
+        }
+      }
+    }
+  }
+}

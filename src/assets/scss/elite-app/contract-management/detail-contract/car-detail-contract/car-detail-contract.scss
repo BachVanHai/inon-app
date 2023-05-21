@@ -1,0 +1,39 @@
+.car-detail-contract {
+  border-radius: 40px;
+  padding: 50px 40px;
+
+  .contract-info {
+    color: #106D5A;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+
+    @media sceen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .car-detail-contract-content {
+    color: #113934;
+
+    .show-photo {
+      cursor: pointer;
+      color: #ff9900;
+    }
+
+    .dark-green {
+      color: #587471;
+    }
+  }
+
+  .row {
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .row:nth-child(odd) {
+    background-color: #F3F5F5;
+  }
+
+}

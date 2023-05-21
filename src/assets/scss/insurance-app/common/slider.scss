@@ -1,0 +1,30 @@
+// Core variables and mixins
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+// Core variables and mixins overrides
+@import "variables";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+
+// Overrides user variable
+@import "components-variables";
+
+.rc-slider {
+  .rc-slider-rail {
+    background-color: #ebebeb;
+  }
+  &:not(.rc-slider-disabled) {
+    .rc-slider-track {
+      background-color: $primary;
+    }
+    .rc-slider-handle,
+    .rc-slider-dot {
+      border-color: $primary;
+    }
+    .rc-slider-handle {
+      &:active {
+        box-shadow: 0 0 0 5px rgba($primary, 0.2);
+      }
+    }
+  }
+}

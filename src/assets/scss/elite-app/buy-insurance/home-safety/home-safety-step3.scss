@@ -1,0 +1,10 @@
+.home-safety-step3-container {
+
+  .duration-insurance-container {
+    margin-left: -40px;
+
+    @media screen and (max-width: 768px){
+      margin-left: 0;
+    }
+  }
+}

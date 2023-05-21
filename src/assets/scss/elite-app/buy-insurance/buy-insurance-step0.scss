@@ -1,0 +1,138 @@
+.buy-insurance-step0 {
+  @media (max-width: 768px) {
+    .header-right {
+      .header-right-title {
+        font-size: 23px;
+      }
+    }
+    .main-right {
+      .main-right-title {
+        font-size: 20px;
+      }
+
+      .main-right-content {
+        .benefit-title {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .avatar-buyInsurance {
+      margin-right: 10px;
+
+      img {
+        max-width: 290px !important;
+        height: auto;
+      }
+    }
+  }
+
+  .avatar-buyInsurance {
+    margin-right: 10px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .header-right {
+    .header-right-title {
+      color: #113934;
+      line-height: 3rem;
+    }
+  }
+
+  .main-right {
+    display: flex;
+    flex-direction: column;
+    background: #fff9ec;
+    border: 1px solid #ffb800;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    .main-right-title {
+      font-weight: bold;
+      margin-bottom: 48px;
+    }
+
+    .main-right-content {
+      .benefit {
+        margin-bottom: 48px;
+      }
+
+      .benefit-title {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .benefit-content {
+        line-height: 25px;
+        color: #4f4f4f;
+        margin: 20px 0px;
+
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .product-card {
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all .3s linear;
+    position: relative;
+    border-radius: 9px;
+    background: white;
+
+    .product-card-icon {
+      width: 45px;
+      height: 45px;
+    }
+
+    .price {
+      transition: all 3s linear;
+      background: rgba(255, 134, 47, 0.09) !important;
+      border-radius: 43px;
+      color: #FF862F !important;
+      position: absolute;
+      bottom: 5%;
+      left: calc(50% - 100px);
+    }
+
+    .buy-now {
+      display: none;
+      transition: all 3s linear;
+      background: #FF9900 !important;
+      border-radius: 71px;
+      color: white !important;
+      position: absolute;
+      bottom: 5%;
+      left: calc(50% - 120px);
+    }
+
+    &:hover {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02), 0px 15px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 9px;
+
+      .price {
+        display: none;
+      }
+
+      .buy-now {
+        display: block;
+      }
+
+    }
+
+  }
+
+  .mb-10px {
+    margin-bottom: 10px !important;
+  }
+
+}

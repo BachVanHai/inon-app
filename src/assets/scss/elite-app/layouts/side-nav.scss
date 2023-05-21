@@ -1,0 +1,245 @@
+.elite-app {
+
+  .sidenav {
+    min-width: 360px;
+    border-radius: 40px;
+    min-height: 100%;
+    padding-right: 22px;
+    background: url("../../../images/elite-app/layouts/side-nav/side-nav-bg.png");
+    background-size: cover;
+    z-index: 2;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      min-width: 100vw;
+      min-height: calc(100vh - 50px);
+      padding: 0;
+      border-radius: 0px;
+      background: url("../../../images/elite-app/layouts/side-nav/side-nav-mobile-bg.png") round;
+      z-index: 3;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease;
+      margin-bottom: 0;
+      background-size: cover;
+    }
+
+    //start web
+    .sidenav__web {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      @media screen and (max-width: 768px){
+        display: none;
+      }
+
+      .sidenav__web__top {
+
+        .sidenav__logo {
+          padding-top: 42px;
+          display: flex;
+          justify-content: center;
+
+          @media screen and (max-width: 768px) {
+            display: none !important;
+          }
+        }
+
+        .sidenav__insurances {
+          margin-top: 70px;
+          color: white;
+          cursor: pointer;
+
+          .box-item {
+            width: 6px;
+            height: 60px;
+            border-radius: 0 8px 8px 0;
+            margin-right: 16px;
+            margin-left: 2px;
+          }
+
+          .active-insurance {
+            .box-item {
+              background: #73C14F;
+            }
+
+            .active-item {
+              background: #73C14F;
+            }
+          }
+
+          .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-radius: 16px;
+            height: 60px;
+            flex-grow: 1;
+
+            &:hover {
+              background: #73c14f85;
+              //transform: translateX(5px);
+              //transition: all 0.5s ease-in;
+            }
+
+            .item__icon {
+              width: 45px;
+            }
+          }
+        }
+      }
+
+      .sidenav__web__bottom {
+        .sidenav__contract {
+          width: 316px;
+          height: 56px;
+          background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.3) 1.5%, rgba(255, 255, 255, 0) 98.66%);
+          backdrop-filter: blur(50px);
+          border-radius: 16px;
+          cursor: pointer;
+          margin-bottom: 58px;
+          margin-left: 22px;
+          position: relative;
+
+          &:hover {
+            .sidenav__contract__icon {
+              stroke: #87B6AC !important;
+            }
+
+            .sidenav__contract__text {
+              color: #87B6AC;
+            }
+
+          }
+
+          &.sidenav__contract-inactive {
+            &:hover {
+              .tooltiptext {
+                visibility: visible;
+              }
+            }
+          }
+
+          .sidenav__contract__text {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+    //end web
+
+    //common
+    .tooltiptext {
+      visibility: hidden;
+      width: 316px;
+      text-align: center;
+      padding: 15px 40px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 10px rgba(184, 196, 194, 0.25);
+      border-radius: 16px;
+
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+      bottom: calc(100% + 25px);
+      left: 50%;
+      margin-left: -158px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 95%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -15px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+      }
+
+      @media screen and (max-width: 768px){
+        text-align: center;
+        padding: 15px 40px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        position: absolute;
+        z-index: 1;
+        bottom: 86px;
+        margin-left: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+      }
+    }
+
+    //start mobile
+
+    .sidenav__mobile {
+
+      display: none;
+      @media screen and (max-width: 768px){
+        display: block;
+      }
+
+      .sidenav__mobile__item {
+        display: flex;
+        position: fixed;
+        left: 22px;
+        right: 37px;
+        bottom: 170px;
+        border-radius: 16px;
+        height: 56px;
+
+        align-items: center;
+
+        .contract-management-text {
+          color: #87B6AC !important;
+        }
+
+        background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.3) 1.5%, rgba(255, 255, 255, 0) 98.66%);
+        backdrop-filter: blur(50px);
+
+        &:hover {
+          .sidenav__contract__icon {
+            stroke: #87B6AC;
+          }
+          .sidenav__mobile__contract {
+            color: #87B6AC;
+          }
+        }
+
+        &.sidenav__mobile__item-inactive {
+          &:hover {
+            .tooltiptext {
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      .language {
+        position: absolute;
+        bottom: 42px;
+        left: 2px;
+      }
+
+      .sidenav__mobile__contract {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    //end mobile
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+
+
+}

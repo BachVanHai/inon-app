@@ -1,0 +1,531 @@
+@import "../varibles.scss";
+
+.buy-insurance-container {
+  background: #e7ebeb;
+  min-height: calc(100vh - 74px);
+  padding: 60px 140px 40px 140px;
+
+  @media screen and (max-width: $breakpoint-both) {
+    min-height: calc(100vh - 50px);
+    background: white;
+    padding: 0 0 32px;
+  }
+
+  .buy-insurance {
+    border-radius: 40px;
+
+    .title {
+      font-size: 24px;
+      line-height: 28px;
+      color: $secondary-color;
+      margin-bottom: 40px;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        margin: 32px 34px;
+      }
+    }
+
+    .steps-mobile {
+      align-items: center;
+      justify-content: center;
+      height: 63px;
+      width: 100%;
+      color: #87b6ac;
+      background: linear-gradient(90deg, #106d5a 20.27%, rgba(16, 109, 90, 0) 136.87%),
+        linear-gradient(283.11deg, #106d5a -16.63%, #73c14f 90.56%);
+
+      .step {
+        display: flex;
+        align-items: center;
+
+        .logo-company {
+          background: #fff4cc;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .divider {
+          width: 28vw;
+          height: 1px;
+          background: #ffebcc;
+        }
+
+        .step-name {
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &.done {
+          .logo-company {
+            border-radius: 50%;
+            background: #ff9900;
+          }
+
+          .divider {
+            background: #ff9900;
+          }
+        }
+
+        &.active {
+          .logo-company {
+            border: 3px solid #ff9900;
+          }
+        }
+      }
+
+      .step-name-container {
+        margin-top: 5px;
+        .step-name {
+          color: #87b6ac;
+          text-transform: uppercase;
+          font-size: 10px;
+          font-weight: bold;
+
+          &.done {
+            color: #ffffff;
+          }
+
+          &.active {
+            color: #ffffff;
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Optional: show position indicator in red */
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+
+    .buy-insurance-steps {
+      width: 100%;
+      display: flex;
+
+      .steps-web {
+        min-width: 200px;
+        background: linear-gradient(90deg, #106d5a 20.27%, rgba(16, 109, 90, 0) 136.87%),
+          linear-gradient(283.11deg, #106d5a -16.63%, #73c14f 90.56%);
+        border-radius: 40px 0px 0px 40px;
+        padding: 60px 0 60px 40px;
+
+        .step {
+          display: flex;
+          color: #87b6ac;
+
+          .circle-check {
+            display: none;
+          }
+
+          .step-number {
+            font-size: 12px;
+            margin-top: -3px;
+          }
+
+          .step-name {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 3px;
+          }
+
+          .divider {
+            width: 2px;
+            height: 134px;
+            background: #fff4cc;
+            margin-left: 16px;
+          }
+
+          .logo-company {
+            background: #fff4cc;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+          }
+
+          &.done {
+            .logo-company {
+              border-radius: 50%;
+              background: #ff9900;
+            }
+
+            .step-number {
+              color: #ff9900;
+            }
+
+            .step-name {
+              color: white;
+            }
+
+            .divider {
+              background: #ff9900;
+            }
+          }
+
+          &.active {
+            .logo-company {
+              border: 3px solid #ff9900;
+            }
+
+            .step-number {
+              color: #ff9900;
+            }
+
+            .step-name {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .step-content {
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        padding: 60px 80px 60px 40px;
+        background: white;
+        border-radius: 0 40px 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media screen and (max-width: $breakpoint-both) {
+          border: none;
+          padding: 0 16px;
+          border-radius: 40px 40px 40px 40px;
+        }
+
+        .vx-checkbox-con {
+          input[type="checkbox"] {
+            width: 30px !important;
+          }
+        }
+
+        .step-footer {
+          width: 100%;
+          margin-top: 3rem;
+        }
+
+        .mb-kind-ofHouse {
+          margin-top: -10px;
+        }
+      }
+
+      .additional-terms {
+        .compensation {
+          background: rgba(16, 109, 90, 0.1);
+          border-radius: 4px;
+          color: $secondary-color;
+          font-weight: bold;
+          padding: 1rem;
+          @media (max-width: 768px) {
+            font-size: 0.85rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+
+      .border {
+        border: 1px solid #cfd7d6 !important;
+        border-radius: 16px;
+      }
+
+      .border-image {
+        border: 1px solid #cfd7d6;
+        border-radius: 4px;
+      }
+
+      .company-selection {
+        .company-selection-title {
+          color: #106d5a;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .companies {
+          padding: 0 16px;
+
+          .company {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e7ebeb;
+            padding: 16px 0;
+
+            @media (max-width: 768px) {
+              display: block;
+            }
+
+            .border-image {
+              img {
+                width: 45px;
+                height: 24px;
+              }
+            }
+
+            .company-name {
+              font-size: 12px;
+              color: #113934;
+            }
+
+            .company-detail {
+              @media screen and (max-width: 768px) {
+                margin-top: 2rem;
+                padding-left: 22px;
+              }
+            }
+          }
+
+          .fee {
+            color: #73c14f;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 32px;
+            margin-left: 16px;
+
+            @media (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+
+          .detail {
+            color: #ff9900;
+            cursor: pointer;
+            min-width: fit-content;
+            margin-right: 16px;
+          }
+        }
+      }
+
+      .payment-methods {
+        .payment-methods-title {
+          color: #106d5a;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .payment-method {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          border-bottom: 1px solid #e7ebeb;
+          padding: 18px 0;
+          color: #113934;
+          font-size: 14px;
+
+          &.selected {
+          }
+
+          &:last-of-type {
+            border: none !important;
+          }
+        }
+      }
+
+      input {
+        border-radius: 16px;
+      }
+
+      .css-yk16xz-control {
+        border-radius: 16px;
+      }
+
+      .title-information {
+        font-size: 16px;
+        color: #106d5a;
+        font-weight: bold;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      //START COMMON
+      // start step1
+      .register-license-plate {
+        color: #113934;
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 24px;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 24px;
+        }
+      }
+
+      .registered {
+        margin-right: 4rem;
+        @media screen and (max-width: 768px) {
+          width: 50%;
+          margin-right: 0;
+        }
+      }
+
+      .unregistered {
+        margin-left: 4rem;
+        @media screen and (max-width: 768px) {
+          width: 50%;
+          margin-left: 0;
+        }
+      }
+
+      .scan {
+        color: #106d5a;
+        font-style: italic;
+      }
+
+      .buyer-info-title {
+        color: #106d5a;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      // end step1
+
+      //start step2
+      .insurance-item {
+        color: #113934;
+        font-size: 14px;
+
+        .insurance-name {
+          color: #73c14f;
+          font-weight: bold;
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-left: 16px;
+          margin-top: 4px;
+
+          @media screen and (max-width: 768px) {
+            margin-left: 5px;
+          }
+        }
+
+        .insurance-content {
+          padding-left: 40px;
+          @media screen and (max-width: 768px) {
+            padding: 0;
+          }
+        }
+
+        .rc-slider {
+          width: 98%;
+          margin-left: 10px;
+        }
+      }
+
+      .duration-of-insurance {
+        //margin-left: -40px;
+        @media screen and (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
+      //end step2
+
+      // start step3
+      .contract-number {
+        color: #73c14f;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          margin-bottom: 0;
+          margin-top: 1rem;
+        }
+      }
+
+      .title-info {
+        color: #106d5a;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .contract-info {
+        margin-top: 12px;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .info-label {
+          color: #73c14f;
+          font-weight: bold;
+          font-size: 14px;
+          margin-bottom: 8px;
+          @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+          }
+        }
+
+        .info-box {
+          color: #113934;
+          font-size: 16px;
+          max-width: 12rem;
+        }
+      }
+
+      .payment-detail {
+        color: #106d5a;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-bottom: 24px;
+      }
+
+      .payment-content {
+        font-size: 14px;
+        color: #113934;
+
+        .payment-content-label {
+          font-weight: bold;
+          margin-bottom: 26px;
+        }
+      }
+
+      .total-fee {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #e7ebeb;
+        padding: 32px 0;
+        font-size: 24px;
+        font-weight: bold;
+
+        .total-fee-title {
+          color: #106d5a;
+        }
+
+        .total-fee-content {
+          color: #73c14f;
+        }
+      }
+
+      // end step3
+      // END COMMON
+    }
+  }
+
+  .form-label-group {
+    margin-bottom: 0;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .form-right {
+    border-radius: 16px 0 0 16px !important;
+  }
+}

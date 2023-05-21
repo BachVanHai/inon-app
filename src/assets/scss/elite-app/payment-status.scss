@@ -1,0 +1,48 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .payment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 20px 60px rgba(184, 196, 194, 0.25);
+    border-radius: 40px;
+    width: 500px;
+    height: 317px;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+
+    .payment-notify {
+      color: #73C14F;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+
+      &.FAIL {
+        color: #106D5A;
+      }
+
+      &.TIMEOUT {
+        color: #106D5A;
+      }
+    }
+  }
+
+  .payment-command {
+    color: #FF9900;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .add-profile-btn {
+    background: #FF9900 !important;
+    border-radius: 16px !important;
+    color: white !important;
+  }
+}
+

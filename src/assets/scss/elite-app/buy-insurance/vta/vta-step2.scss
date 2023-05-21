@@ -1,0 +1,60 @@
+.card-active {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 20px #d3dedc;
+  cursor: pointer;
+  // border : 3px solid  #28c76f;
+  transition: all 0.3 ease-in-out;
+  background: linear-gradient(
+      90deg,
+      #106d5a 20.27%,
+      rgba(16, 109, 90, 0) 136.87%
+    ),
+    linear-gradient(283.11deg, #106d5a -16.63%, #73c14f 90.56%);
+  color: #fff;
+}
+.fee-vta {
+  background-color: #399055;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.text-white {
+  color: #fff;
+}
+.text-dark {
+  color: #000;
+}
+.text-yellow {
+  color: #ffd503;
+}
+.bg-gradient {
+  background: linear-gradient(
+      90deg,
+      #106d5a 20.27%,
+      rgba(16, 109, 90, 0) 136.87%
+    ),
+    linear-gradient(185.11deg, #106d5a -20.63%, #73c14f 86.56%);
+}
+.text-buyer-insurance{
+  color: #113934;
+  font-size: 16px;
+}
+.text-green-light{
+  color: #106e5a;
+}
+@media (max-width : 768px) {
+  .insurance-package-desktop{
+    display: none;
+  }
+  .insurance-package-mobile{
+    display: block;
+  }
+}
+@media (min-width : 769px) {
+  .insurance-package-desktop{
+    display: flex;
+  }
+  .insurance-package-mobile{
+    display: none;
+  }
+}

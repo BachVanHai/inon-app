@@ -1,0 +1,79 @@
+.account-list {
+  .table-detail-header {
+    text-align: left;
+    color: white;
+    background-color: #c3c3c3;
+  }
+  .ReactTable .rt-tbody .rt-tr {
+    text-align: left;
+  }
+
+  .account-state-note {
+    .account-state-note-text{
+      width: 106px;
+    }
+
+    .account-state-note-icon {
+      min-width: 15px;
+      min-height: 15px;
+      border-radius: 50%;
+    }
+
+    .w-135px {
+      width: 135px;
+    }
+  }
+
+  .account-list-main {
+    height: 50vh;
+    overflow: auto;
+  }
+}
+
+.create-account {
+  .insurance-card {
+    background-color: #ececec;
+  
+
+    .popover {
+      z-index: 11;
+    }
+    .card-title {
+      font-size: 1.1rem;
+    }
+
+    .insurance-box {
+      background-color: white;
+      .insurance-setting-item {
+        .collapse-icon {
+          cursor: pointer;
+        }
+        &.collapse-collapsed .collapse-icon,
+        &.closing .collapse-icon {
+          transform: rotate(0deg);
+          transition: all 0.5s ease;
+        }
+        &.collapse-shown .collapse-icon,
+        &.opening .collapse-icon {
+          transform: rotate(180deg);
+          transition: all 0.5s ease;
+        }
+      }
+    }
+
+    &.collapse-collapsed .collapse-icon,
+    &.closing .collapse-icon {
+      transform: rotate(0deg);
+      transition: all 0.5s ease;
+    }
+    &.collapse-shown .collapse-icon,
+    &.opening .collapse-icon {
+      transform: rotate(180deg);
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #338955;
+}

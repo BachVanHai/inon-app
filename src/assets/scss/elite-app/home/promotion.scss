@@ -1,0 +1,111 @@
+.elite-app {
+  .promotion {
+
+    .gift-web {
+      border-radius: 50%;
+      background: #FF9900;
+      box-shadow: 0px 4px 24px rgba(134, 149, 146, 0.15);
+      padding: 0.8vw;
+    }
+
+    .promotion-icon {
+      cursor: pointer;
+      //width: 92px;
+      //height: 92px;
+    }
+
+    .promotion-popover {
+      z-index: 2;
+      width: 440px;
+      right: 14px;
+      top: 150px;
+      background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.3) 1.5%, rgba(255, 255, 255, 0) 98.66%);
+      backdrop-filter: blur(50px);
+      border-radius: 24px;
+      transform: translateX(100%);
+      transition: transform 0.5s ease;
+
+      @media screen and (max-width: 768px) {
+        z-index: 2;
+        width: 100vw;
+        top: 50px;
+        left: 0;
+        background: #106D5A;
+        border-radius: 0;
+      }
+
+      .promotion-popover-header {
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .promotion-popover-content {
+        display: none;
+
+        .promotion-for-you {
+          border-radius: 24px;
+          text-align: center;
+          background: #FF9900;
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+
+          .promotion-for-you-text {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            @media screen and (max-width: 768px){
+              color: #106D5A;
+              font-size: 24px;
+            }
+          }
+        }
+
+        .promotions {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          height: 520px;
+          @media screen and (max-width: 768px){
+            height: calc(100vh - 50px - 1rem - 62px);
+            padding-top: 25px;
+          }
+        }
+
+        .promotion-discount {
+          background: #FFFFFF;
+          box-shadow: 0px 3px 10px rgba(134, 149, 146, 0.15);
+          border-radius: 12px;
+          margin-bottom: 5px;
+
+          .promotion-discount-text {
+            padding: 16px;
+            font-weight: bold;
+            color: #113934;
+            font-size: 14px;
+          }
+        }
+
+        .promotion-detail-btn {
+          border-radius: 12px;
+          background: white;
+
+          div {
+            background: #FF9900;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .open {
+      transform: translateX(0%);
+    }
+  }
+}

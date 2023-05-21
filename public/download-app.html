@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<script>
+
+  function iOS() {
+    return [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod'
+      ].includes(navigator.platform)
+      // iPad on iOS 13 detection
+      || (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
+  }
+
+  window.location.href = iOS() ? 'https://apps.apple.com/app/id1574202853' : 'https://play.google.com/store/apps/details?id=com.inon.vn'
+
+</script>
+
+</html>

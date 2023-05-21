@@ -1,0 +1,57 @@
+.gallery-carousel {
+  max-height: 136px;
+  min-height: 136px;
+  margin-top: 100px;
+
+  @media screen and (max-width: 768px){
+    margin-top: 0;
+    padding-top: 48px;
+    min-width: auto;
+  }
+
+  .gallery-carousel-arrow {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 31%;
+    @media screen and (max-width: 768px){
+      width: 24px;
+      height: 24px;
+      top: 59%;
+    }
+  }
+
+  .gallery-carousel-arrow-left {
+    left: 24px;
+  }
+
+  .gallery-carousel-arrow-right {
+    right: 24px;
+  }
+
+  .gallery-carousel-content {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 768px){
+      font-size: 14px;
+    }
+  }
+
+  .carousel .slide img {
+    max-height: 136px;
+    min-height: 136px;
+
+    @media screen and (max-width: 768px){
+      max-height: 88px;
+      min-height: 88px;
+    }
+  }
+}

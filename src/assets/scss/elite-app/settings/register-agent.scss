@@ -1,0 +1,59 @@
+.elite-app {
+
+  .register-agent {
+    background-image: url('../../../images/elite-app/settings/register-agent-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 60px);
+
+    .yellow {
+      color: yellow !important;
+    }
+
+    .register-agent-benefits {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      .register-agent-content {
+        max-width: 512px;
+      }
+    }
+
+    .register {
+      button {
+        background: white;
+        color: yellowgreen;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .elite-app {
+    .register-agent {
+      min-height: calc(100vh - 132px) !important;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .elite-app {
+    .register-agent {
+      .h1 {
+        font-size: 1.5rem;
+      }
+      .h2 {
+        font-size: 1.25rem;
+      }
+    }
+
+    .register-agent-benefits {
+      img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+  }
+}
